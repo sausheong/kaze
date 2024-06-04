@@ -47,8 +47,6 @@ func init() {
 		log.Println("Error loading .kaze file")
 	}
 	gin.SetMode(gin.ReleaseMode)
-
-	// go startOllamaServer()
 }
 
 func main() {
