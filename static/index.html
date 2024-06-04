@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/static/css/all.min.css"/>
+    <link rel="stylesheet" href="/static/css/default.min.css"/>
+    <link rel="stylesheet" href="/static/css/styles.css"/>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/jquery.min.js" ></script>
+    <script src="/static/js/highlight.min.js"></script>
+    <script src="/static/js/showdown.min.js"></script>   
+    <script src="/static/js/autosize.min.js"></script>    
+  </head>
+  <body>
+    <div class="chat-container pb-5 pt-0 h-100 d-flex flex-column position-relative">
+      <div class="fs-2 text-success logo-wrapper row justify-content-between align-items-center">
+        kaze 🍃
+      </div>
+      <div class="printout-wrapper">
+        <div id="printout" class="printout"></div>
+      </div>
+
+      <div class="position-sticky bottom-0 mt-auto bg-white">          
+        <div class="dropdowns-container py-2 text-end">      
+  
+          <div class="d-inline-block">
+            <button class="btn btn-secondary btn-sm" type="button" id="document">
+              ¶ document
+            </button>            
+          </div>
+           
+          <div class="d-inline-block">
+            <button class="btn btn-secondary btn-sm" type="button" id="history">
+              ⏱️ history
+            </button>            
+          </div>                   
+          <div class="d-inline-block">
+            <button class="btn btn-secondary btn-sm" type="button" id="settings">
+              ⛭ settings
+            </button>            
+          </div>   
+          <div class="d-inline-block">
+            <button class="btn btn-danger btn-sm" type="button" id="clear">
+              🅇 clear
+            </button>            
+          </div>      
+          <div class="d-inline-block">
+            <button class="btn btn-success btn-sm" type="button" id="run">
+              ▶ run
+            </button>            
+          </div>                          
+        </div>
+
+        <div class="main-controls">
+          <form>
+            <div
+              id="input-group"
+              class="position-relative prompt-input-wrapper">
+              <textarea
+                  class="form-control prompt-input"
+                  placeholder="Ask your question here (Ctrl + Enter to send)"
+                  id="prompt"></textarea>
+            </div>
+          </form>
+        </div>  
+      </div>
+
+    </div>
+
+    <script src="/static/js/app.js"></script>
+  </body>
+</html>

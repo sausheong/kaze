@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/static/css/all.min.css"/>
+    <link rel="stylesheet" href="/static/css/default.min.css"/>
+    <link rel="stylesheet" href="/static/css/styles.css"/>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/jquery.min.js" ></script>
+    <script src="/static/js/highlight.min.js"></script>
+    <script src="/static/js/showdown.min.js"></script>   
+    <script src="/static/js/autosize.min.js"></script>        
+  </head>
+  <body>
+    <div class="chat-container pb-5 pt-0 h-100 d-flex flex-column position-relative">
+      <div class="fs-2 text-success logo-wrapper row justify-content-between align-items-center">
+        kaze
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="mb-3 mt-3">History</h3>
+        </div>
+      </div>      
+      <div class="history-wrapper">
+        <div id="history">{{ . }}</div>
+      </div>
+      <div class="row mt-3">
+        <div class="input-group mt-3 justify-content-end">
+          <button class="btn btn-secondary btn-sm" type="button" id="back">
+            ⬅ back
+          </button>            
+        </div>        
+      </div>
+    </div>
+
+    <script src="/static/js/history.js"></script>
+  </body>
+</html>
